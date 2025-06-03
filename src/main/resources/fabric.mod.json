@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "ersambucone-client",
+  "version": "${version}",
+  "name": "ErSamBucone Client",
+  "description": "Client mod per funzionalità avanzate",
+  "authors": ["TuNome"],
+  "contact": { "homepage": "https://github.com/tuusername" },
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.ersambucone.ClientMain"],
+    "fabric-gametest": []
+  },
+  "depends": {
+    "fabricloader": ">=0.15.7",
+    "fabric-api": ">=0.97.6",
+    "minecraft": "~1.21.4"
+  }
+}

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="de2902b5-feb9-480b-b714-0963aaf1d4e4" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2xz1X6pPQza6T1CGw1YgxoKbWSg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Notification.DisplayName-DoNotAsk-WindowsDefender": "Microsoft Defender may affect IDE",
+    "Notification.DoNotAsk-WindowsDefender": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.zencoder-patch-add-chat-message-raw-content": "true",
+    "RunOnceActivity.zencoder-patch-chat-storage-migration": "true",
+    "RunOnceActivity.zencoder-patch-generate-chat-message-id": "true",
+    "RunOnceActivity.zencoder-patch-migrate-custom-instruction": "true",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.github.book.buyainame.settings.CodeAssistSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="de2902b5-feb9-480b-b714-0963aaf1d4e4" name="Changes" comment="" />
+      <created>1748926125454</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748926125454</updated>
+      <workItem from="1748926129861" duration="70000" />
+      <workItem from="1748926320933" duration="229000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="ai.zencoder.plugin.mcp">
+    <option name="internalToolsState" value="{&quot;file_search&quot;:true,&quot;fulltext_search&quot;:true}" />
+  </component>
+  <component name="ai.zencoder.plugin.rag.settings">
+    <option name="desiredChunkSizeBytes" value="4194304" />
+    <option name="forbiddenExtensions">
+      <set>
+        <option value=".log,.lock,.svg" />
+      </set>
+    </option>
+    <option name="pollingIntervalMs" value="60000" />
+    <option name="projectInfoUpdateThresholdPercentage" value="99" />
+    <option name="repoIndexingIntervalMs" value="300000" />
+  </component>
+  <component name="ai.zencoder.plugin.rag.state">
+    <option name="indexedFilesMap">
+      <map>
+        <entry key="$PROJECT_DIR$/build.gradle" value="1748926320394" />
+        <entry key="$PROJECT_DIR$/settings.gradle" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/ersambucone.iml" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/ClientMain.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/config/ConfigManager.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/config/KeybindManager.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/events/EventBus.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/events/InputHandler.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/mixins/client/MixinChatScreen.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/mixins/client/MixinMinecraftClient.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/mixins/world/MixinEntityTracker.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/mixins/world/MixinWorldRenderer.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/automation/BuildHelper.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/automation/MacroEngine.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/automation/SmartClicker.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/cosmetics/CapeSystem.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/cosmetics/ParticleFX.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/monitoring/FarmAnalytics.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/monitoring/StaffRadar.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/rewards/GiftAutomation.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/rewards/RewardTracker.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/utility/ChatLogger.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/utility/CommandSystem.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/utility/InventoryUtils.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/ui/DropdownGUI.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/ui/DynamicHUD.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/ui/splash/SplashScreen.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/ui/themes/DarkTheme.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/ui/themes/TaunahiTheme.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/ui/themes/ThemeManager.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/utils/Logger.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/utils/MathUtils.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/utils/RenderUtils.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/utils/TimeUtils.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/resources/assets/ersambucone/lang/en_us.json" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/resources/assets/ersambucone/lang/it_it.json" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/resources/assets/ersambucone/shaders/hud_blur.fsh" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/resources/assets/ersambucone/textures/gui/buttons/hover.png" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/resources/assets/ersambucone/textures/gui/buttons/normal.png" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/resources/assets/ersambucone/textures/gui/hud/fps.png" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/resources/assets/ersambucone/textures/gui/hud/macro.png" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/resources/assets/ersambucone/textures/icons/gift.png" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/resources/assets/ersambucone/textures/icons/staff_alert.png" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/resources/assets/ersambucone/textures/particles/flame.png" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/resources/assets/ersambucone/textures/particles/sparkle.png" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/resources/config/macros/farming.json" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/resources/config/rewards/commands.json" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/resources/fabric.mod.json" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/resources/mixins.json" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/resources/pack.mcmeta" value="1748926130093" />
+      </map>
+    </option>
+    <option name="lastCommitHash" value="1748926325573" />
+    <option name="lastIndexTimestamp" value="1748926320394" />
+    <option name="repoAccumulatedChanges" value="1" />
+    <option name="repoTotalFiles" value="42" />
+    <option name="repositoryId" value="1ed8ef27-4522-417b-a28e-ad4a070548e3" />
+    <option name="state" value="FULLY_INDEXED" />
+  </component>
+</project>
