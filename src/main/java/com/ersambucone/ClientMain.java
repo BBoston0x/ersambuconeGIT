@@ -10,6 +10,7 @@ import com.ersambucone.modules.Module;
 import com.ersambucone.modules.impl.automation.MacroEngine;
 import com.ersambucone.ui.DynamicHUD;
 import com.ersambucone.utils.Logger;
+import com.ersambucone.utils.ModuleConfigManager;
 import com.ersambucone.utils.PerformanceMonitor;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
@@ -21,6 +22,7 @@ import java.nio.file.Path;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Main client class with optimized initialization and performance monitoring
@@ -31,11 +33,11 @@ public class ClientMain implements ClientModInitializer, EventListener {
     private DynamicHUD dynamicHUD;
     private PerformanceMonitor performanceMonitor;
     
-    // Thread pool for background tasks
+    // Thread pool for background tasks with proper shutdown
     private final Executor backgroundExecutor = Executors.newFixedThreadPool(2);
     
     // Client version
-    public static final String VERSION = "1.0.0";
+    public static final String VERSION = "1.0.1";
 
     @Override
     public void onInitializeClient() {
@@ -49,6 +51,9 @@ public class ClientMain implements ClientModInitializer, EventListener {
         
         // Initialize ModuleManager first
         ModuleManager.getInstance();
+        
+        // Load module configurations
+        ModuleConfigManager.getInstance().loadModuleStates();
         
         // Initialize core components
         macroEngine = new MacroEngine();
@@ -91,8 +96,23 @@ public class ClientMain implements ClientModInitializer, EventListener {
      */
     private void saveAllConfigs() {
         try {
-            // Save any pending configurations
+            // Save module configurations
             Logger.log("Saving configurations...");
+            ModuleConfigManager.getInstance().saveModuleStates();
+            
+            // Shutdown thread pool gracefully
+            if (backgroundExecutor instanceof java.util.concurrent.ExecutorService) {
+                java.util.concurrent.ExecutorService executorService = (java.util.concurrent.ExecutorService) backgroundExecutor;
+                executorService.shutdown();
+                try {
+                    if (!executorService.awaitTermination(5, TimeUnit.SECONDS)) {
+                        executorService.shutdownNow();
+                    }
+                } catch (InterruptedException e) {
+                    executorService.shutdownNow();
+                    Thread.currentThread().interrupt();
+                }
+            }
         } catch (Exception e) {
             Logger.log("Error saving configurations: " + e.getMessage());
         }

@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
+import java.util.concurrent.atomic.LongAdder;
 
 /**
  * Monitors performance metrics for the client
@@ -23,11 +24,15 @@ public class PerformanceMonitor {
     // Track active modules and their impact
     private final Map<String, ModuleMetrics> moduleMetrics = new ConcurrentHashMap<>();
     
-    // Track frame time
-    private final AtomicLong totalFrameTime = new AtomicLong(0);
-    private final AtomicLong frameCount = new AtomicLong(0);
+    // Track frame time (using LongAdder for better concurrency)
+    private final LongAdder totalFrameTime = new LongAdder();
+    private final LongAdder frameCount = new LongAdder();
     private long lastFrameTimeReset = System.currentTimeMillis();
     private static final long FRAME_TIME_RESET_INTERVAL = 10000; // 10 seconds
+    
+    // Performance warning thresholds
+    private static final int LOW_FPS_THRESHOLD = 30;
+    private static final int HIGH_MEMORY_THRESHOLD_MB = 1024; // 1GB
     
     /**
      * Updates FPS history
@@ -111,14 +116,14 @@ public class PerformanceMonitor {
      * @param frameTimeNanos Frame time in nanoseconds
      */
     public void recordFrameTime(long frameTimeNanos) {
-        totalFrameTime.addAndGet(frameTimeNanos);
-        frameCount.incrementAndGet();
+        totalFrameTime.add(frameTimeNanos);
+        frameCount.increment();
         
         long now = System.currentTimeMillis();
         if (now - lastFrameTimeReset > FRAME_TIME_RESET_INTERVAL) {
             // Reset counters periodically
-            totalFrameTime.set(0);
-            frameCount.set(0);
+            totalFrameTime.reset();
+            frameCount.reset();
             lastFrameTimeReset = now;
         }
     }
@@ -129,10 +134,47 @@ public class PerformanceMonitor {
      * @return Average frame time in ms
      */
     public double getAverageFrameTimeMs() {
-        long frames = frameCount.get();
+        long frames = frameCount.sum();
         if (frames == 0) return 0;
         
-        return (totalFrameTime.get() / 1_000_000.0) / frames;
+        return (totalFrameTime.sum() / 1_000_000.0) / frames;
+    }
+    
+    /**
+     * Checks if the client is experiencing performance issues
+     * 
+     * @return true if performance issues are detected
+     */
+    public boolean hasPerformanceIssues() {
+        return getAverageFps() < LOW_FPS_THRESHOLD || 
+               getMemoryUsageMB() > HIGH_MEMORY_THRESHOLD_MB;
+    }
+    
+    /**
+     * Gets performance recommendations based on current metrics
+     * 
+     * @return A string with performance recommendations
+     */
+    public String getPerformanceRecommendations() {
+        StringBuilder recommendations = new StringBuilder();
+        
+        if (getAverageFps() < LOW_FPS_THRESHOLD) {
+            recommendations.append("- Low FPS detected. Consider disabling some modules.\n");
+        }
+        
+        if (getMemoryUsageMB() > HIGH_MEMORY_THRESHOLD_MB) {
+            recommendations.append("- High memory usage. Consider restarting the client.\n");
+        }
+        
+        // Find modules that might be causing issues
+        moduleMetrics.forEach((name, metrics) -> {
+            if (metrics.getEnableCount() > 0 && metrics.getTotalActiveTimeSeconds() > 300) {
+                recommendations.append("- Module '").append(name)
+                              .append("' has been active for a long time. Consider disabling if not needed.\n");
+            }
+        });
+        
+        return recommendations.length() > 0 ? recommendations.toString() : "No performance issues detected.";
     }
     
     /**

@@ -6,7 +6,10 @@
   "mixins": [
   ],
   "client": [
-    "InGameHudMixin"
+    "InGameHudMixin",
+    "client.MixinChatScreen",
+    "client.MixinMinecraftClient",
+    "world.MixinWorldRenderer"
   ],
   "injectors": {
     "defaultRequire": 1

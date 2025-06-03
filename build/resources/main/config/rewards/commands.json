@@ -1,4 +1,0 @@
-{
-  "reward_commands": ["/ms claim_all", "/pass claim_all"],
-  "cooldown_seconds": 30
-}
