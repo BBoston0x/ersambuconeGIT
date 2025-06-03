@@ -10,6 +10,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
@@ -29,6 +32,12 @@
     "RunOnceActivity.zencoder-patch-chat-storage-migration": "true",
     "RunOnceActivity.zencoder-patch-generate-chat-message-id": "true",
     "RunOnceActivity.zencoder-patch-migrate-custom-instruction": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/boston/Desktop/ersambucone",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "com.github.book.buyainame.settings.CodeAssistSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
@@ -51,6 +60,7 @@
       <updated>1748926125454</updated>
       <workItem from="1748926129861" duration="70000" />
       <workItem from="1748926320933" duration="229000" />
+      <workItem from="1748945635424" duration="713000" />
     </task>
     <servers />
   </component>

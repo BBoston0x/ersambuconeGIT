@@ -1,2 +1,9 @@
-rootProject.name = 'ersambucone-client'  // Nome del tuo progetto
-include('src')                          // Include la cartella src
+pluginManagement {
+    repositories {
+        maven { url = 'https://maven.fabricmc.net/' }
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+
+rootProject.name = 'ersambucone-client'
