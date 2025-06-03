@@ -1,35 +1,70 @@
 plugins {
-    id 'fabric-loom' version '1.10.5'
+    id 'fabric-loom' version '1.4.6'
     id 'maven-publish'
 }
 
-group = "com.ersambucone"
-version = "1.0.0"
-archivesBaseName = "ersambucone-client"
+version = project.mod_version
+group = project.maven_group
+
+base {
+    archivesName = project.archives_base_name
+}
 
 repositories {
-    maven {
-        url = "https://maven.fabricmc.net/"
-    }
-    mavenCentral()
-    maven {
-        url = "https://libraries.minecraft.net/"
-    }
+    // Add repositories here
 }
 
 dependencies {
-    minecraft "com.mojang:minecraft:1.21"
-    mappings "net.fabricmc:yarn:1.21+build.3:v2"
-    modImplementation "net.fabricmc.fabric-api:fabric-api:0.89.1+1.21"
+    // Minecraft
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+
+    // Yarn Mappings
+    mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+
+    // Fabric Loader
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+    // Fabric API
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 }
 
-loom {
-    runs {
-        client {
-            name = "Fabric Client"
-            client()
-            runDir = "run"
-            vmArgs "-Dfabric.development=true"
+processResources {
+    inputs.property "version", project.version
+    filteringCharset "UTF-8"
+
+    filesMatching("fabric.mod.json") {
+        expand(
+            "version": project.version
+        )
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.release = 17
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+    withSourcesJar()
+}
+
+jar {
+    from("LICENSE") {
+        rename { "${it}_${project.archivesBaseName}"}
+    }
+}
+
+// Configure the maven publication
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
         }
+    }
+
+    // See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
+    repositories {
+        // Add repositories to publish to here.
     }
 }

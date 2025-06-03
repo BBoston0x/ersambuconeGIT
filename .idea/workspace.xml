@@ -4,20 +4,115 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de2902b5-feb9-480b-b714-0963aaf1d4e4" name="Changes" comment="" />
+    <list default="true" id="de2902b5-feb9-480b-b714-0963aaf1d4e4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/events/ModuleToggleEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/events/RenderEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/mixin/InGameHudMixin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/Module.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/ModuleManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/impl/automation/BuildHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/impl/automation/MacroEngine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/impl/automation/SmartClicker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/impl/cosmetics/CapeSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/impl/cosmetics/ParticleFX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/impl/monitoring/FarmAnalytics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/impl/monitoring/StaffRadar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/impl/rewards/GiftAutomation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/impl/rewards/RewardTracker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/impl/utility/ChatLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/impl/utility/CommandSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/impl/utility/InventoryUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/ui/ErSambuconeGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/ui/GuiManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/utils/ConfigManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/utils/PerformanceMonitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ersambucone/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ersambucone.mixins.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14.1/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.1/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14.1/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14.1/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/zencoder-chats-dedicated.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/zencoder-chats-dedicated.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ersambucone/ClientMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/ClientMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ersambucone/config/KeybindManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/config/KeybindManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ersambucone/events/EventBus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/events/EventBus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ersambucone/events/EventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/events/EventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ersambucone/events/InputHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/events/InputHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ersambucone/mixins/client/MixinChatScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/mixins/client/MixinChatScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ersambucone/mixins/world/MixinEntityTracker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ersambucone/mixins/world/MixinWorldRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/mixins/world/MixinWorldRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/automation/BuildHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/automation/MacroEngine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/automation/SmartClicker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/cosmetics/CapeSystem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/cosmetics/ParticleFX.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/monitoring/FarmAnalytics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/monitoring/StaffRadar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/rewards/GiftAutomation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/rewards/RewardTracker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/utility/ChatLogger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/utility/CommandSystem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/utility/InventoryUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ersambucone/ui/DropdownGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/ui/DropdownGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ersambucone/ui/DynamicHUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/ui/DynamicHUD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ersambucone/utils/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/utils/Logger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ersambucone/utils/RenderUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ersambucone/utils/RenderUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ersambucone/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ersambucone/lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fabric.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fabric.mod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mixins.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mixins.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2xz1X6pPQza6T1CGw1YgxoKbWSg" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -28,10 +123,12 @@
     "Notification.DisplayName-DoNotAsk-WindowsDefender": "Microsoft Defender may affect IDE",
     "Notification.DoNotAsk-WindowsDefender": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.zencoder-patch-add-chat-message-raw-content": "true",
     "RunOnceActivity.zencoder-patch-chat-storage-migration": "true",
     "RunOnceActivity.zencoder-patch-generate-chat-message-id": "true",
     "RunOnceActivity.zencoder-patch-migrate-custom-instruction": "true",
+    "delegate.build.task.process.console.enabled": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/boston/Desktop/ersambucone",
     "node.js.detected.package.eslint": "true",
@@ -39,7 +136,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.github.book.buyainame.settings.CodeAssistSettingsConfigurable",
+    "settings.editor.selected.configurable": "advanced.settings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -61,11 +158,27 @@
       <workItem from="1748926129861" duration="70000" />
       <workItem from="1748926320933" duration="229000" />
       <workItem from="1748945635424" duration="713000" />
+      <workItem from="1748952468599" duration="20917000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="ai.zencoder.plugin.mcp">
     <option name="internalToolsState" value="{&quot;file_search&quot;:true,&quot;fulltext_search&quot;:true}" />
@@ -84,41 +197,93 @@
   <component name="ai.zencoder.plugin.rag.state">
     <option name="indexedFilesMap">
       <map>
-        <entry key="$PROJECT_DIR$/build.gradle" value="1748926320394" />
+        <entry key="$PROJECT_DIR$/.gradle/8.14.1/checksums/checksums.lock" value="1748953689305" />
+        <entry key="$PROJECT_DIR$/.gradle/8.14.1/checksums/md5-checksums.bin" value="1748952789181" />
+        <entry key="$PROJECT_DIR$/.gradle/8.14.1/checksums/sha1-checksums.bin" value="1748952789181" />
+        <entry key="$PROJECT_DIR$/.gradle/8.14.1/executionHistory/executionHistory.bin" value="1748953689305" />
+        <entry key="$PROJECT_DIR$/.gradle/8.14.1/executionHistory/executionHistory.lock" value="1748953689305" />
+        <entry key="$PROJECT_DIR$/.gradle/8.14.1/fileHashes/fileHashes.bin" value="1748953689305" />
+        <entry key="$PROJECT_DIR$/.gradle/8.14.1/fileHashes/fileHashes.lock" value="1748953689305" />
+        <entry key="$PROJECT_DIR$/.gradle/8.14.1/fileHashes/resourceHashesCache.bin" value="1748952789181" />
+        <entry key="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" value="1748978270207" />
+        <entry key="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" value="1748953989267" />
+        <entry key="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" value="1748978270207" />
+        <entry key="$PROJECT_DIR$/.gradle/file-system.probe" value="1748954589211" />
+        <entry key="$PROJECT_DIR$/.idea/gradle.xml" value="1748956070014" />
+        <entry key="$PROJECT_DIR$/.idea/misc.xml" value="1748954589211" />
+        <entry key="$PROJECT_DIR$/.idea/workspace.xml" value="1748986670231" />
+        <entry key="$PROJECT_DIR$/.idea/zencoder-chats-dedicated.xml" value="1748986670231" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="1748956070014" />
+        <entry key="$PROJECT_DIR$/build/reports/problems/problems-report.html" value="1748953689305" />
+        <entry key="$PROJECT_DIR$/gradle.properties" value="1748956070014" />
+        <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="1748953689305" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="1748926130093" />
         <entry key="$PROJECT_DIR$/src/ersambucone.iml" value="1748926130093" />
-        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/ClientMain.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/ClientMain.java" value="1748986370379" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/ErSambuconeClient.java" value="1748973770211" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/NexusVoidClient.java" value="9223372036854775807" />
         <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/config/ConfigManager.java" value="1748926130093" />
-        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/config/KeybindManager.java" value="1748926130093" />
-        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/events/EventBus.java" value="1748926130093" />
-        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/events/InputHandler.java" value="1748926130093" />
-        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/mixins/client/MixinChatScreen.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/config/KeybindManager.java" value="1748966589301" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/events/EventBus.java" value="1748976770799" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/events/EventListener.java" value="1748957569980" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/events/InputHandler.java" value="1748976770799" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/events/ModuleToggleEvent.java" value="1748976770799" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/events/RenderEvent.java" value="1748957569980" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/mixin/InGameHudMixin.java" value="1748977370168" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/mixins/client/MixinChatScreen.java" value="1748954289930" />
         <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/mixins/client/MixinMinecraftClient.java" value="1748926130093" />
         <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/mixins/world/MixinEntityTracker.java" value="1748926130093" />
-        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/mixins/world/MixinWorldRenderer.java" value="1748926130093" />
-        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/automation/BuildHelper.java" value="1748926130093" />
-        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/automation/MacroEngine.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/mixins/world/MixinWorldRenderer.java" value="1748954289930" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/Category.java" value="1748973770211" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/Module.java" value="1748976770799" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/ModuleManager.java" value="1748976770799" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/automation/BuildHelper.java" value="1748956689227" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/automation/MacroEngine.java" value="1748976470760" />
         <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/automation/SmartClicker.java" value="1748926130093" />
         <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/cosmetics/CapeSystem.java" value="1748926130093" />
         <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/cosmetics/ParticleFX.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/impl/automation/BuildHelper.java" value="1748973770211" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/impl/automation/MacroEngine.java" value="1748978270207" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/impl/automation/SmartClicker.java" value="1748978270207" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/impl/cosmetics/CapeSystem.java" value="1748973770211" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/impl/cosmetics/ParticleFX.java" value="1748973770211" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/impl/monitoring/FarmAnalytics.java" value="1748973770211" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/impl/monitoring/StaffRadar.java" value="1748978270207" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/impl/rewards/GiftAutomation.java" value="1748973770211" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/impl/rewards/RewardTracker.java" value="1748973770211" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/impl/utility/ChatLogger.java" value="1748973770211" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/impl/utility/CommandSystem.java" value="1748978270207" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/impl/utility/InventoryUtils.java" value="1748973770211" />
         <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/monitoring/FarmAnalytics.java" value="1748926130093" />
-        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/monitoring/StaffRadar.java" value="1748926130093" />
-        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/rewards/GiftAutomation.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/monitoring/StaffRadar.java" value="1748956689227" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/rewards/GiftAutomation.java" value="1748956689227" />
         <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/rewards/RewardTracker.java" value="1748926130093" />
         <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/utility/ChatLogger.java" value="1748926130093" />
         <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/utility/CommandSystem.java" value="1748926130093" />
         <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/modules/utility/InventoryUtils.java" value="1748926130093" />
-        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/ui/DropdownGUI.java" value="1748926130093" />
-        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/ui/DynamicHUD.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/ui/DropdownGUI.java" value="1748956689227" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/ui/DynamicHUD.java" value="1748976770799" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/ui/ErSambuconeGUI.java" value="1748977370168" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/ui/GuiManager.java" value="1748973770211" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/ui/HTMLClickGui.java" value="9223372036854775807" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/ui/NexusVoidGUI.java" value="9223372036854775807" />
         <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/ui/splash/SplashScreen.java" value="1748926130093" />
         <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/ui/themes/DarkTheme.java" value="1748926130093" />
         <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/ui/themes/TaunahiTheme.java" value="1748926130093" />
         <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/ui/themes/ThemeManager.java" value="1748926130093" />
-        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/utils/Logger.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/utils/ConfigManager.java" value="1748973770211" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/utils/Logger.java" value="1748976770799" />
         <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/utils/MathUtils.java" value="1748926130093" />
-        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/utils/RenderUtils.java" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/utils/PerformanceMonitor.java" value="1748976770799" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/utils/RenderUtils.java" value="1748956689227" />
+        <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/utils/TextRendererHelper.java" value="1748957869966" />
         <entry key="$PROJECT_DIR$/src/main/java/com/ersambucone/utils/TimeUtils.java" value="1748926130093" />
-        <entry key="$PROJECT_DIR$/src/main/resources/assets/ersambucone/lang/en_us.json" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/resources/assets/ersambucone/ClickGui.html" value="9223372036854775807" />
+        <entry key="$PROJECT_DIR$/src/main/resources/assets/ersambucone/EnhancedClickGui.html" value="9223372036854775807" />
+        <entry key="$PROJECT_DIR$/src/main/resources/assets/ersambucone/ErSambuconeGUI.html" value="1748971389736" />
+        <entry key="$PROJECT_DIR$/src/main/resources/assets/ersambucone/NexusVoidGUI.html" value="1748968370065" />
+        <entry key="$PROJECT_DIR$/src/main/resources/assets/ersambucone/icon.png" value="1748955769948" />
+        <entry key="$PROJECT_DIR$/src/main/resources/assets/ersambucone/lang/en_us.json" value="1748965069971" />
         <entry key="$PROJECT_DIR$/src/main/resources/assets/ersambucone/lang/it_it.json" value="1748926130093" />
         <entry key="$PROJECT_DIR$/src/main/resources/assets/ersambucone/shaders/hud_blur.fsh" value="1748926130093" />
         <entry key="$PROJECT_DIR$/src/main/resources/assets/ersambucone/textures/gui/buttons/hover.png" value="1748926130093" />
@@ -131,14 +296,15 @@
         <entry key="$PROJECT_DIR$/src/main/resources/assets/ersambucone/textures/particles/sparkle.png" value="1748926130093" />
         <entry key="$PROJECT_DIR$/src/main/resources/config/macros/farming.json" value="1748926130093" />
         <entry key="$PROJECT_DIR$/src/main/resources/config/rewards/commands.json" value="1748926130093" />
-        <entry key="$PROJECT_DIR$/src/main/resources/fabric.mod.json" value="1748926130093" />
-        <entry key="$PROJECT_DIR$/src/main/resources/mixins.json" value="1748926130093" />
+        <entry key="$PROJECT_DIR$/src/main/resources/ersambucone.mixins.json" value="1748957569980" />
+        <entry key="$PROJECT_DIR$/src/main/resources/fabric.mod.json" value="1748976470760" />
+        <entry key="$PROJECT_DIR$/src/main/resources/mixins.json" value="1748954589211" />
         <entry key="$PROJECT_DIR$/src/main/resources/pack.mcmeta" value="1748926130093" />
       </map>
     </option>
-    <option name="lastCommitHash" value="1748926325573" />
-    <option name="lastIndexTimestamp" value="1748926320394" />
-    <option name="repoAccumulatedChanges" value="1" />
+    <option name="lastCommitHash" value="fad2330c286e516c86a2607f36ffdfb90c0fa657" />
+    <option name="lastIndexTimestamp" value="1748986670231" />
+    <option name="repoAccumulatedChanges" value="17" />
     <option name="repoTotalFiles" value="42" />
     <option name="repositoryId" value="1ed8ef27-4522-417b-a28e-ad4a070548e3" />
     <option name="state" value="FULLY_INDEXED" />

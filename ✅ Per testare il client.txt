@@ -1,0 +1,62 @@
+✅ Per testare il client:
+Sì, puoi usare questo comando per avviare il gioco moddato con il tuo client custom:
+
+bash
+Copia
+Modifica
+cd C:/Users/boston/Desktop/ersambucone
+./gradlew runClient
+Questo avvia Minecraft in modalità sviluppo, caricando le tue modifiche senza dover ricompilare il .jar ogni volta.
+
+🔄 Dopo una modifica (es. nuovo modulo o cambio codice):
+1. Hai solo modificato del codice (Java)?
+Non devi fare nulla di particolare: ./gradlew runClient lo compilerà e caricherà automaticamente.
+
+Il launcher si occuperà di ricompilare i file .class aggiornati.
+
+2. Hai aggiunto/modificato JSON (config o fabric.mod.json)?
+Basta rilanciare con ./gradlew runClient se sono file nella cartella resources.
+
+3. Hai aggiunto nuove classi (es. nuovi moduli)?
+Verifica che:
+
+Le classi siano nella cartella src/main/java/tuo/pacchetto/...
+
+Le classi siano registrate correttamente nel tuo entrypoint (es. nel modulo ClientMod, ModuleManager, ecc.).
+
+⚠️ Se il modulo non viene inizializzato o registrato, anche se esiste nel codice, non farà nulla nel gioco.
+
+🚀 Per creare un nuovo .jar aggiornato (dopo modifiche):
+bash
+Copia
+Modifica
+./gradlew build
+Troverai il file aggiornato qui:
+
+php-template
+Copia
+Modifica
+build/libs/<nome-del-client>-<versione>.jar
+✅ Best Practice (sviluppo rapido):
+Durante lo sviluppo: usa sempre ./gradlew runClient.
+
+Quando hai finito e vuoi dare il .jar ad altri: esegui ./gradlew build.
+
+📌 Consiglio extra per moduli:
+Assicurati che ogni modulo sia:
+
+Registrato nel tuo ModuleManager (.add(new NomeModulo()))
+
+Abbia un costruttore valido e override del metodo onEnable() / onTick() / onDisable()
+
+Se visibile nell'interfaccia, sia correttamente integrato nel ClickGUI o simili
+
+Se vuoi, posso fornirti uno script .bat per fare tutto con un clic, tipo:
+
+bat
+Copia
+Modifica
+@echo off
+cd /d C:\Users\boston\Desktop\ersambucone
+./gradlew runClient
+pause

@@ -1,0 +1,65 @@
+[2025-06-03 20:55:31] [INFO] [ErSambucone] Logger initialized
+[2025-06-03 20:55:31] [INFO] [ErSambucone] Initializing Er Sambucone Client v1.0.0
+[2025-06-03 20:55:31] [INFO] [ErSambucone] Registering modules...
+[2025-06-03 20:55:31] [INFO] [ErSambucone] Successfully registered 12 modules
+[2025-06-03 20:55:31] [INFO] [ErSambucone] Registered 12 modules
+[2025-06-03 20:55:31] [INFO] [ErSambucone] HUD registered successfully
+[2025-06-03 20:55:31] [INFO] [ErSambucone] Client initialized in 58ms
+[2025-06-03 20:55:31] [INFO] [ErSambucone] Loaded macros successfully
+[2025-06-03 20:55:31] [INFO] [ErSambucone] Macros loaded successfully
+[2025-06-03 20:58:08] [INFO] [ErSambucone] Initializing GUI Manager
+[2025-06-03 20:58:08] [INFO] [ErSambucone] Initializing browser component for Er Sambucone GUI
+[2025-06-03 20:58:08] [INFO] [ErSambucone] HTML content length: 32914
+[2025-06-03 20:58:08] [INFO] [ErSambucone] Registered JavaScript callbacks for Er Sambucone GUI
+[2025-06-03 20:58:08] [INFO] [ErSambucone] Loading modules into GUI:
+[2025-06-03 20:58:08] [INFO] [ErSambucone] Category: Utility
+[2025-06-03 20:58:08] [INFO] [ErSambucone]   - ChatLogger (disabled)
+[2025-06-03 20:58:08] [INFO] [ErSambucone]   - CommandSystem (disabled)
+[2025-06-03 20:58:08] [INFO] [ErSambucone]   - InventoryUtils (disabled)
+[2025-06-03 20:58:08] [INFO] [ErSambucone] Category: Automation
+[2025-06-03 20:58:08] [INFO] [ErSambucone]   - BuildHelper (disabled)
+[2025-06-03 20:58:08] [INFO] [ErSambucone]   - MacroEngine (disabled)
+[2025-06-03 20:58:08] [INFO] [ErSambucone]   - SmartClicker (disabled)
+[2025-06-03 20:58:08] [INFO] [ErSambucone] Category: Rewards
+[2025-06-03 20:58:08] [INFO] [ErSambucone]   - RewardTracker (disabled)
+[2025-06-03 20:58:08] [INFO] [ErSambucone]   - GiftAutomation (disabled)
+[2025-06-03 20:58:08] [INFO] [ErSambucone] Category: Cosmetics
+[2025-06-03 20:58:08] [INFO] [ErSambucone]   - CapeSystem (disabled)
+[2025-06-03 20:58:08] [INFO] [ErSambucone]   - ParticleFX (disabled)
+[2025-06-03 20:58:08] [INFO] [ErSambucone] Category: Monitoring
+[2025-06-03 20:58:08] [INFO] [ErSambucone]   - StaffRadar (disabled)
+[2025-06-03 20:58:08] [INFO] [ErSambucone]   - FarmAnalytics (disabled)
+[2025-06-03 20:58:15] [INFO] [ErSambucone] ChatLogger will log to file
+[2025-06-03 20:58:15] [INFO] [ErSambucone] Filter mode: All
+[2025-06-03 20:58:15] [INFO] [ErSambucone] Toggled module: ChatLogger to enabled
+[2025-06-03 20:58:17] [INFO] [ErSambucone] Toggled module: ChatLogger to disabled
+[2025-06-03 20:59:31] [INFO] [ErSambucone] RewardTracker will show notifications
+[2025-06-03 20:59:31] [INFO] [ErSambucone] RewardTracker will not automatically claim rewards
+[2025-06-03 20:59:31] [INFO] [ErSambucone] Toggled module: RewardTracker to enabled
+[2025-06-03 20:59:33] [INFO] [ErSambucone] Toggled module: RewardTracker to disabled
+[2025-06-03 20:59:50] [INFO] [ErSambucone] CPS: 8
+[2025-06-03 20:59:50] [INFO] [ErSambucone] Randomize CPS: enabled
+[2025-06-03 20:59:50] [INFO] [ErSambucone] Toggled module: SmartClicker to enabled
+[2025-06-03 20:59:51] [INFO] [ErSambucone] Toggled module: SmartClicker to disabled
+[2025-06-03 21:00:55] [INFO] [ErSambucone] RewardTracker will show notifications
+[2025-06-03 21:00:55] [INFO] [ErSambucone] RewardTracker will not automatically claim rewards
+[2025-06-03 21:00:55] [INFO] [ErSambucone] Toggled module: RewardTracker to enabled
+[2025-06-03 21:00:55] [INFO] [ErSambucone] Toggled module: RewardTracker to disabled
+[2025-06-03 21:00:56] [INFO] [ErSambucone] GiftAutomation will automatically thank for gifts
+[2025-06-03 21:00:56] [INFO] [ErSambucone] Thank message: Thanks!
+[2025-06-03 21:00:56] [INFO] [ErSambucone] Toggled module: GiftAutomation to enabled
+[2025-06-03 21:00:56] [INFO] [ErSambucone] Toggled module: GiftAutomation to disabled
+[2025-06-03 21:00:57] [INFO] [ErSambucone] Build mode: Circle
+[2025-06-03 21:00:57] [INFO] [ErSambucone] Radius: 5
+[2025-06-03 21:00:57] [INFO] [ErSambucone] Toggled module: BuildHelper to enabled
+[2025-06-03 21:00:57] [INFO] [ErSambucone] Toggled module: BuildHelper to disabled
+[2025-06-03 21:00:58] [INFO] [ErSambucone] Repeat count: 10
+[2025-06-03 21:00:58] [INFO] [ErSambucone] Delay: 200ms
+[2025-06-03 21:00:58] [INFO] [ErSambucone] Toggled module: MacroEngine to enabled
+[2025-06-03 21:00:58] [INFO] [ErSambucone] Toggled module: MacroEngine to disabled
+[2025-06-03 21:01:00] [INFO] [ErSambucone] CPS: 8
+[2025-06-03 21:01:00] [INFO] [ErSambucone] Randomize CPS: enabled
+[2025-06-03 21:01:00] [INFO] [ErSambucone] Toggled module: SmartClicker to enabled
+[2025-06-03 21:01:02] [INFO] [ErSambucone] Toggled module: SmartClicker to disabled
+[2025-06-03 21:01:05] [INFO] [ErSambucone] Shutting down Er Sambucone Client...
+[2025-06-03 21:01:05] [INFO] [ErSambucone] Saving configurations...
