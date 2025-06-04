@@ -13,8 +13,23 @@ public class DynamicHUD implements EventListener {
     private MinecraftClient client;
     private boolean isRegistered = false;
 
-    public DynamicHUD(MinecraftClient client) {
-        this.client = client;
+    public DynamicHUD() {
+        this.client = MinecraftClient.getInstance();
+        register();
+    }
+    
+    /**
+     * Updates the HUD state
+     * Called every client tick
+     */
+    public void update() {
+        // This method is called every tick to update any dynamic HUD elements
+        // Most of the actual updates happen in the render method with timers
+        
+        // Make sure we're registered to receive render events
+        if (!isRegistered) {
+            register();
+        }
     }
 
     // Cache for HUD elements to avoid string creation every frame

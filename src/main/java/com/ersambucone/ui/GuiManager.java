@@ -14,12 +14,25 @@ import java.util.Map;
  */
 public class GuiManager {
     private static GuiManager INSTANCE;
+    private DynamicHUD dynamicHUD;
     
     /**
      * Creates a new GuiManager
      */
-    private GuiManager() {
+    public GuiManager() {
         Logger.log("Initializing GUI Manager");
+        this.dynamicHUD = new DynamicHUD();
+    }
+    
+    /**
+     * Updates the GUI components
+     * Called every client tick
+     */
+    public void update() {
+        // Update HUD elements if they exist
+        if (dynamicHUD != null) {
+            dynamicHUD.update();
+        }
     }
     
     /**

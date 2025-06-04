@@ -4,7 +4,10 @@ import com.ersambucone.config.KeybindManager;
 import com.ersambucone.ui.ErSambuconeGUI;
 import com.ersambucone.utils.Logger;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
+import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.option.KeyBinding;
+import org.lwjgl.glfw.GLFW;
 
 /**
  * Optimized input handler with debouncing and performance improvements
@@ -25,6 +28,26 @@ public class InputHandler implements EventListener {
         // Register to client tick events to check key presses
         ClientTickEvents.END_CLIENT_TICK.register(this::onClientTick);
         Logger.debug("Input handler initialized");
+    }
+    
+    /**
+     * Registers all keybindings used by the client
+     */
+    public void registerKeybindings() {
+        // Register keybindings if not already initialized
+        if (!initialized) {
+            // Register keybindings through KeyBindingHelper
+            KeybindManager.MACRO_TOGGLE = KeyBindingHelper.registerKeyBinding(
+                new KeyBinding("key.ersambucone.macro_toggle", GLFW.GLFW_KEY_M, "category.ersambucone")
+            );
+            
+            KeybindManager.CLICKGUI_TOGGLE = KeyBindingHelper.registerKeyBinding(
+                new KeyBinding("key.ersambucone.clickgui_toggle", GLFW.GLFW_KEY_RIGHT_SHIFT, "category.ersambucone")
+            );
+            
+            initialized = true;
+            Logger.debug("Keybindings registered successfully");
+        }
     }
     
     private void onClientTick(MinecraftClient client) {

@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.ersambucone.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "client.MixinChatScreen",
+    "world.MixinWorldRenderer"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

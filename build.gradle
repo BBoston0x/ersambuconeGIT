@@ -11,7 +11,10 @@ base {
 }
 
 repositories {
-    // Add repositories here
+    // Maven Central for Gson and Commons Math
+    mavenCentral()
+    
+    // Add other repositories here if needed
 }
 
 dependencies {
@@ -26,6 +29,12 @@ dependencies {
 
     // Fabric API
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    
+    // Gson for JSON processing
+    implementation "com.google.code.gson:gson:2.10.1"
+    
+    // Apache Commons Math
+    implementation "org.apache.commons:commons-math3:3.6.1"
 }
 
 processResources {

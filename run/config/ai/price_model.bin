@@ -1,0 +1,15 @@
+// Crea un file PriceModelTrainer.java in com/ersambucone/ai/
+public class PriceModelTrainer {
+    public static void main(String[] args) throws Exception {
+        PriceModel model = new PriceModel();
+        
+        // Simula dati di training (sostituisci con dati reali)
+        List<Auction> trainingData = List.of(
+            new Auction("ASPECT_OF_THE_END", 1_200_000, 4, List.of("Sharpness V")),
+            new Auction("HYPERION", 15_000_000, 5, List.of("Ultimate Wise V"))
+        );
+        
+        model.update(trainingData);
+        model.save("run/config/ai/price_model.bin");
+    }
+}

@@ -6,6 +6,8 @@ import com.ersambucone.modules.impl.automation.SmartClicker;
 import com.ersambucone.modules.impl.cosmetics.CapeSystem;
 import com.ersambucone.modules.impl.cosmetics.ParticleFX;
 import com.ersambucone.modules.impl.monitoring.FarmAnalytics;
+import com.ersambucone.modules.impl.monitoring.FarmOptimizer;
+import com.ersambucone.modules.impl.monitoring.SmartAuctionWatcher;
 import com.ersambucone.modules.impl.monitoring.StaffRadar;
 import com.ersambucone.modules.impl.rewards.GiftAutomation;
 import com.ersambucone.modules.impl.rewards.RewardTracker;
@@ -76,6 +78,8 @@ public class ModuleManager {
             // Monitoring modules
             register(new StaffRadar());
             register(new FarmAnalytics());
+            register(new FarmOptimizer());
+            register(new SmartAuctionWatcher());
             
             // Register any additional modules here
             

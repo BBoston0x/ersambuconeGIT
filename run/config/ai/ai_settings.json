@@ -1,0 +1,4 @@
+{
+  "scan_interval": 300000,
+  "alert_threshold": 0.85
+}
